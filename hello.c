@@ -1,19 +1,9 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main()
 {
-    float a = 0.1;
-    float b = 0.2;
-    float suma = a + b;
-
-    if (suma = 0.3)
-    {
-        printf("Suma jest rowna 0.3\n");
-    }
-    else
-    {
-        printf("Suma nie jest rowna 0.3, suma to: %.1f\n", suma);
-    }
+    printf("Typ int jest wielkości %lu bitów. Jego zakres to %d do %d.\n", sizeof(int) * 8, INT_MIN, INT_MAX);
 
     return 0;
 }
